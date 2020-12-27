@@ -1,0 +1,13 @@
+h1,
+p {
+  font-family: Lato;
+}
+h4 {
+  color: #f74470;
+}
+.progress {
+  height: 0.5rem !important;
+}
+.progress-bar {
+  background-color: #f74470;
+}
