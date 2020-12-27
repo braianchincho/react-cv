@@ -2,10 +2,11 @@ import React from "react";
 
 const Education = ({ institution, career, state }) => {
   return (
-    <div>
+    <div className="mt-3 mb-3">
       <h5>{institution}</h5>
-      <h6>{career}</h6>
-      <p>{state}</p>
+      <h6 className="sub-title">
+        {career} | {state}
+      </h6>
     </div>
   );
 };

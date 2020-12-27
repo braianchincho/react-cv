@@ -3,7 +3,7 @@ import { formatDate } from "../resourse/dateFormater";
 const AboutMe = props => {
   const { birthday, location, mail } = props.aboutMe;
   return (
-    <section id="aboutme" className="mt-3">
+    <section id="aboutme" className="mt-4 mb-4">
       <h4>About me</h4>
       <p className="mt-4">
         Hello, My name is John Doe. Lorem ipsum dolor sit amet, usu sumo dicant

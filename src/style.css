@@ -11,3 +11,7 @@ h4 {
 .progress-bar {
   background-color: #f74470;
 }
+.sub-title {
+  color: #666;
+  font-weight: 400;
+}
