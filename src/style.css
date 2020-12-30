@@ -54,6 +54,9 @@ main {
   text-transform: uppercase;
   color: #fff;
 }
+.list-menu__a:hover {
+  color: #fff;
+}
 .avatar {
   overflow: hidden;
   width: 165px;
