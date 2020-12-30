@@ -1,9 +1,28 @@
+body {
+  background-color: lightblue;
+}
 h1,
 p {
   font-family: Lato;
 }
 h4 {
   color: #f74470;
+}
+.menu {
+  padding: 46px;
+  position: fixed;
+  height: 700px;
+  width: 280px;
+  z-index: 5;
+  background-color: #3f51b5;
+}
+.content {
+  width: 720px;
+  background-color: white;
+}
+main {
+  width: 1000px;
+  margin: 0 auto;
 }
 .progress {
   height: 0.5rem !important;
@@ -20,4 +39,44 @@ h4 {
 }
 .pull-rigth {
   float: right !important;
+}
+.list-none {
+  list-style: none;
+}
+.list-menu {
+  padding: 0;
+  margin: 0;
+}
+.list-menu__a {
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #fff;
+}
+.avatar {
+  overflow: hidden;
+  width: 165px;
+  height: 165px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+}
+.name {
+  margin: 15px 0;
+}
+.name h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 23px;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 1px;
+  margin: 0 0 5px;
+}
+.name span {
+  color: #d8d8e9;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  font-weight: 300;
 }

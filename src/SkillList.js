@@ -5,7 +5,7 @@ const SkillList = ({ skillList }) => {
     return null;
   }
   return (
-    <section id="skils" className="mt-3">
+    <section id="skills" className="mt-3">
       <h4>Skills</h4>
       <div className="row mt-4">
         {skillList.map(item => (
