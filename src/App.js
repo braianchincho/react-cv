@@ -4,8 +4,10 @@ import "./style.css";
 import Principal from "./Principal";
 export default function App() {
   return (
-    <div>
-      <Principal />
-    </div>
+    <main>
+      <div>
+        <Principal />
+      </div>
+    </main>
   );
 }
