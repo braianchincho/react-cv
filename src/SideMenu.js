@@ -8,7 +8,7 @@ const SideMenu = () => {
           alt="avatar"
         />
       </div>
-      <div class="name">
+      <div className="name">
         <h1>Braian Chincho</h1>
         <span>Ing en sitemas</span>
       </div>

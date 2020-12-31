@@ -7,7 +7,7 @@ import cv from "../resourse/cv";
 export default class Principal extends React.Component {
   render() {
     return (
-      <div className="container">
+      <div className="container-cv">
         <h1>CV</h1>
         <AboutMe aboutMe={cv.aboutMe} />
 

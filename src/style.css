@@ -15,15 +15,26 @@ h4 {
   width: 280px;
   z-index: 5;
   background-color: #3f51b5;
+  transition: 0.8s ease;
 }
 .content {
   width: 720px;
   background-color: white;
+  transition: 0.8s ease;
 }
 main {
   width: 1000px;
   margin: 0 auto;
 }
+@media only screen and (max-width: 1015px) {
+  .content {
+    width: 100%;
+  }
+  main {
+    width: 100% !important;
+  }
+}
+
 .progress {
   height: 0.5rem !important;
 }
@@ -82,4 +93,29 @@ main {
   font-family: "Poppins", sans-serif;
   font-size: 15px;
   font-weight: 300;
+}
+.hamburger-menu {
+  position: absolute;
+  top: 0;
+  left: 15px;
+  bottom: 0;
+  margin: auto;
+  width: 30px;
+  height: 55px;
+  cursor: pointer;
+}
+.mobile-bar {
+  background: rgba(12, 12, 12, 0.75);
+  color: #fff;
+  height: 60px;
+  right: -59px;
+  position: absolute;
+  width: 60px;
+  z-index: 3;
+}
+.bar {
+  position: relative;
+  transform: translateY(25px);
+  background: #fff;
+  transition: all 0 300ms;
 }
