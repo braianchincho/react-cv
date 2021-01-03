@@ -7,38 +7,27 @@ export default function App() {
   const [width, setWidth] = React.useState(280);
   const [translate, setTranslate] = React.useState(0);
   const [xPosition, setX] = React.useState(0);
+  const [isOpen, setOpen] = React.useState(true);
   const toggleMenu = () => {
     console.log(width, xPosition);
     setX(xPosition < 0 ? 0 : -width);
+    setOpen(!isOpen);
     // setTranslate(xPosition0 ? 280 : -280);
   };
 
   return (
-    <main>
-      <div className="pull-left">
-        <div
-          className="menu"
-          style={{
-            transform: `translatex(${xPosition}px)`,
-            width: width
-          }}
-        >
-          <div className="mobile-bar">
-            <div className="hamburger-menu" onClick={() => toggleMenu()}>
-              <div className="bar" />
-            </div>
+    <div class="wrapper">
+      <div className={`menu ${isOpen ? "menu-push" : "menu-unpush"}`}>
+        <div className="mobile-bar">
+          <div className="hamburger-menu" onClick={() => toggleMenu()}>
+            <div className="bar" />
           </div>
-          <SideMenu />
         </div>
+        <SideMenu />
       </div>
-      <div
-        className="pull-rigth content"
-        style={{
-          transform: `translate(${xPosition}px)`
-        }}
-      >
+      <div className={`content ${isOpen ? "content-push" : "content-unpush"}`}>
         <Principal />
       </div>
-    </main>
+    </div>
   );
 }

@@ -1,5 +1,6 @@
 body {
-  background-color: lightblue;
+  background-color: red;
+  overflow-x: hidden;
 }
 h1,
 p {
@@ -17,24 +18,61 @@ h4 {
   background-color: #3f51b5;
   transition: 0.8s ease;
 }
+.menu-push {
+  transform: translatex(0px);
+}
+.menu-unpush {
+  transform: translatex(-280px);
+}
+.content-push {
+  transform: translate(280px);
+}
+.content-unpush {
+  transform: translate(0px);
+}
 .content {
-  width: 720px;
+  width: 100%;
   background-color: white;
   transition: 0.8s ease;
 }
-main {
-  width: 1000px;
+.wrapper {
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 }
-@media only screen and (max-width: 1015px) {
+section {
+  padding: 60px 70px;
+  position: relative;
+  border-bottom: solid 1px #eee;
+}
+.content.push {
+  transform: translatex(0px);
+}
+.content.unpush {
+  transform: translatex(-295px);
+}
+.menu.push {
+  transform: translatex(0px);
+}
+.menu.unpush {
+  transform: translatex(-295px);
+}
+/* @media only screen and (max-width: 1015px) {
   .content {
-    width: 100%;
+    width: 1015px;
   }
-  main {
+  .wrapper {
     width: 100% !important;
   }
-}
-
+} */
+/* @media only screen and (max-width: 880px) {
+  .push {
+    transform: translatex(428px);
+  }
+  .unpush {
+    transform: translatex(150px);
+  }
+} */
 .progress {
   height: 0.5rem !important;
 }
