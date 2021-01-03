@@ -5,8 +5,8 @@ const ExperienceList = ({ experienceList }) => {
     return null;
   }
   return (
-    <section className="mt-3">
-      <h4 id="experience">Experience</h4>
+    <section id="experience" className="mt-3">
+      <h4>Experience</h4>
       <div className="row mt-4">
         {experienceList.map(item => (
           <div className="col-12">
