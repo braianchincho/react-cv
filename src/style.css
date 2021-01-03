@@ -145,13 +145,12 @@ section {
   cursor: pointer;
 }
 .mobile-bar {
-  background: rgba(12, 12, 12, 0.75);
-  color: #fff;
   height: 60px;
-  right: -59px;
+  right: -60px;
   position: absolute;
   width: 60px;
   z-index: 3;
+  margin-top: -2rem;
 }
 .bar {
   position: relative;

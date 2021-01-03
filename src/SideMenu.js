@@ -10,7 +10,7 @@ const SideMenu = ({ toggleMenu }) => {
       </div>
       <div className="name">
         <h1>Braian Chincho</h1>
-        <span>Ing en sitemas</span>
+        <span>Ing en sistemas</span>
       </div>
       <ul className="list-none list-menu">
         <li className="mb-4">

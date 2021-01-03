@@ -8,7 +8,6 @@ export default class Principal extends React.Component {
   render() {
     return (
       <div className="container-cv">
-        <h1>CV</h1>
         <AboutMe aboutMe={cv.aboutMe} />
 
         <EducationList educationList={cv.education} />

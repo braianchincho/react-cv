@@ -1,6 +1,7 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./style.css";
+import "./hamburger.css";
 import Principal from "./Principal";
 import SideMenu from "./SideMenu";
 export default function App() {
@@ -10,12 +11,20 @@ export default function App() {
   };
 
   return (
-    <div class="wrapper">
+    <div className="wrapper">
       <div className={`menu ${isOpen ? "menu-push" : "menu-unpush"}`}>
         <div className="mobile-bar">
-          <div className="hamburger-menu" onClick={() => toggleMenu()}>
-            <div className="bar" />
-          </div>
+          <button
+            className={`hamburger hamburger--slider js-hamburger ${
+              isOpen ? "is-active" : ""
+            }`}
+            type="button"
+            onClick={() => toggleMenu()}
+          >
+            <span className="hamburger-box">
+              <span className="hamburger-inner" />
+            </span>
+          </button>
         </div>
         <SideMenu toggleMenu={toggleMenu} />
       </div>
