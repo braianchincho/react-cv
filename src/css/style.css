@@ -33,7 +33,7 @@ h4 {
   transform: translatex(0px);
 }
 .content {
-  width: 100%;
+  width: 1000px;
   background-color: white;
   transition: 0.8s ease;
 }
@@ -59,22 +59,6 @@ section {
 .menu.unpush {
   transform: translatex(-295px);
 }
-/* @media only screen and (max-width: 1015px) {
-  .content {
-    width: 1015px;
-  }
-  .wrapper {
-    width: 100% !important;
-  }
-} */
-/* @media only screen and (max-width: 880px) {
-  .push {
-    transform: translatex(428px);
-  }
-  .unpush {
-    transform: translatex(150px);
-  }
-} */
 .progress {
   height: 0.5rem !important;
 }
@@ -157,4 +141,14 @@ section {
   transform: translateY(25px);
   background: #fff;
   transition: all 0 300ms;
+}
+@media only screen and (max-width: 1300px) {
+  .content {
+    width: 900px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .content {
+    width: 420px;
+  }
 }

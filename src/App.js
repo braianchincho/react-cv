@@ -1,7 +1,7 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./style.css";
-import "./hamburger.css";
+import "./css/style.css";
+import "./css/hamburger.css";
 import Principal from "./Principal";
 import SideMenu from "./SideMenu";
 export default function App() {
