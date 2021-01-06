@@ -11,53 +11,15 @@ p {
 h4 {
   color: #f74470;
 }
-.menu {
-  padding: 46px;
-  position: fixed;
-  height: 700px;
-  width: 280px;
-  z-index: 5;
-  background-color: #3f51b5;
-  transition: 0.8s ease;
-}
-.menu-push {
-  transform: translatex(0px);
-}
-.menu-unpush {
-  transform: translatex(-280px);
-}
-.content-push {
-  transform: translatex(280px);
-}
-.content-unpush {
-  transform: translatex(0px);
-}
-.content {
-  width: 1000px;
-  background-color: white;
-  transition: 0.8s ease;
-}
+
 .wrapper {
-  margin: 0 auto;
   display: flex;
-  flex-direction: column;
+  align-items: stretch;
 }
 section {
-  padding: 60px 70px;
+  padding: 50px 60px;
   position: relative;
   border-bottom: solid 1px #eee;
-}
-.content.push {
-  transform: translatex(0px);
-}
-.content.unpush {
-  transform: translatex(-295px);
-}
-.menu.push {
-  transform: translatex(0px);
-}
-.menu.unpush {
-  transform: translatex(-295px);
 }
 .progress {
   height: 0.5rem !important;
@@ -68,12 +30,6 @@ section {
 .sub-title {
   color: #666;
   font-weight: 400;
-}
-.pull-left {
-  float: left !important;
-}
-.pull-rigth {
-  float: right !important;
 }
 .list-none {
   list-style: none;
@@ -134,7 +90,6 @@ section {
   position: absolute;
   width: 60px;
   z-index: 3;
-  margin-top: -2rem;
 }
 .bar {
   position: relative;
@@ -142,13 +97,13 @@ section {
   background: #fff;
   transition: all 0 300ms;
 }
-@media only screen and (max-width: 1300px) {
-  .content {
-    width: 900px;
+@media (max-width: 770px) {
+  #content {
+    width: 100%;
   }
-}
-@media only screen and (max-width: 700px) {
-  .content {
-    width: 420px;
+  section {
+    padding: 0px 0px;
+    position: relative;
+    border-bottom: solid 1px #eee;
   }
 }

@@ -2,6 +2,7 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./css/style.css";
 import "./css/hamburger.css";
+import "./css/sidebar.css";
 import Principal from "./Principal";
 import SideMenu from "./SideMenu";
 export default function App() {
@@ -12,7 +13,7 @@ export default function App() {
 
   return (
     <div className="wrapper">
-      <div className={`menu ${isOpen ? "menu-push" : "menu-unpush"}`}>
+      <nav id="sidebar" className={`${isOpen ? "active" : ""}`}>
         <div className="mobile-bar">
           <button
             className={`hamburger hamburger--slider js-hamburger ${
@@ -26,9 +27,9 @@ export default function App() {
             </span>
           </button>
         </div>
-        <SideMenu toggleMenu={() => {}} />
-      </div>
-      <div className={`content ${isOpen ? "content-push" : "content-unpush"}`}>
+        <SideMenu />
+      </nav>
+      <div id="content" className={`${isOpen ? "active" : ""}`}>
         <Principal />
       </div>
     </div>
