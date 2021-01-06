@@ -26,7 +26,7 @@ export default function App() {
             </span>
           </button>
         </div>
-        <SideMenu toggleMenu={toggleMenu} />
+        <SideMenu toggleMenu={() => {}} />
       </div>
       <div className={`content ${isOpen ? "content-push" : "content-unpush"}`}>
         <Principal />

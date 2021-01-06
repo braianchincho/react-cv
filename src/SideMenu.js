@@ -1,5 +1,11 @@
 import React from "react";
-const SideMenu = ({ toggleMenu }) => {
+const menu = [
+  { id: "aboutme", title: "About Me" },
+  { id: "education", title: "Education" },
+  { id: "skills", title: "Skills" },
+  { id: "experience", title: "Experience" }
+];
+const SideMenu = () => {
   return (
     <div>
       <div className="avatar">
@@ -13,42 +19,13 @@ const SideMenu = ({ toggleMenu }) => {
         <span>Ing en sistemas</span>
       </div>
       <ul className="list-none list-menu">
-        <li className="mb-4">
-          <a
-            href="#aboutme"
-            className="list-menu__a"
-            onClick={() => toggleMenu()}
-          >
-            About Me
-          </a>
-        </li>
-        <li className="mb-4">
-          <a
-            href="#education"
-            className="list-menu__a"
-            onClick={() => toggleMenu()}
-          >
-            Education
-          </a>
-        </li>
-        <li className="mb-4">
-          <a
-            href="#skills"
-            className="list-menu__a"
-            onClick={() => toggleMenu()}
-          >
-            Skills
-          </a>
-        </li>
-        <li className="mb-4">
-          <a
-            href="#experience"
-            className="list-menu__a"
-            onClick={() => toggleMenu()}
-          >
-            Experience
-          </a>
-        </li>
+        {menu.map(item => (
+          <li className="mb-4" id={`list-menu-item-${item.id}`}>
+            <a href={`#${item.id}`} className="list-menu__a">
+              {item.title}
+            </a>
+          </li>
+        ))}
       </ul>
     </div>
   );
