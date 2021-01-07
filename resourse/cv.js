@@ -20,11 +20,18 @@ const cv = {
       endDate: new Date(2020, 2, 1)
     },
     {
+      id: 7,
+      institution: "Mcafee - Argentina",
+      rol: "Technical intern",
+      startDate: new Date(2018, 1, 15),
+      endDate: new Date(2018, 11, 15)
+    },
+    {
       id: 1,
       institution: "Universidad tecnológica nacional",
       rol: "Encargado de laboratorio",
-      startDate: new Date(2018, 2, 15),
-      endDate: new Date(2018, 11, 15)
+      startDate: new Date(2017, 2, 15),
+      endDate: new Date(2017, 11, 15)
     }
   ],
   skills: [
