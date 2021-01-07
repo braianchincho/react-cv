@@ -4,10 +4,7 @@ html {
 body {
   overflow-x: hidden;
 }
-h1,
-p {
-  font-family: Lato;
-}
+
 h4 {
   color: #f74470;
 }
@@ -16,6 +13,7 @@ h4 {
   display: flex;
   align-items: stretch;
 }
+/* CONTENT */
 section {
   padding: 50px 60px;
   position: relative;
@@ -31,6 +29,25 @@ section {
   color: #666;
   font-weight: 400;
 }
+.hamburger-menu {
+  position: absolute;
+  top: 0;
+  left: 15px;
+  bottom: 0;
+  margin: auto;
+  width: 30px;
+  height: 55px;
+  cursor: pointer;
+}
+.mobile-bar {
+  height: 60px;
+  right: -60px;
+  position: absolute;
+  width: 60px;
+  z-index: 3;
+}
+/* END CONTENT */
+/* SIDE HEADER MENU */
 .list-none {
   list-style: none;
 }
@@ -74,33 +91,8 @@ section {
   font-size: 15px;
   font-weight: 300;
 }
-.hamburger-menu {
-  position: absolute;
-  top: 0;
-  left: 15px;
-  bottom: 0;
-  margin: auto;
-  width: 30px;
-  height: 55px;
-  cursor: pointer;
-}
-.mobile-bar {
-  height: 60px;
-  right: -60px;
-  position: absolute;
-  width: 60px;
-  z-index: 3;
-}
-.bar {
-  position: relative;
-  transform: translateY(25px);
-  background: #fff;
-  transition: all 0 300ms;
-}
+/* END SIDE HEADER MENU */
 @media (max-width: 770px) {
-  #content {
-    width: 100%;
-  }
   section {
     padding: 0px 0px;
     position: relative;

@@ -6,7 +6,7 @@ import "./css/sidebar.css";
 import Principal from "./Principal";
 import SideMenu from "./SideMenu";
 export default function App() {
-  const [isOpen, setOpen] = React.useState(true);
+  const [isOpen, setOpen] = React.useState(false);
   const toggleMenu = () => {
     setOpen(!isOpen);
   };

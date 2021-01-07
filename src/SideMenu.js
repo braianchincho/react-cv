@@ -21,9 +21,12 @@ const SideMenu = ({ clickHref }) => {
       <ul className="list-none list-menu">
         {menu.map(item => (
           <li className="mb-4" id={`list-menu-item-${item.id}`}>
+            <a href={`#${item.id}`} className="list-menu__a d-none-mobile">
+              {item.title}
+            </a>
             <a
               href={`#${item.id}`}
-              className="list-menu__a"
+              className="list-menu__a d-none-desktop"
               onClick={clickHref ? clickHref : () => {}}
             >
               {item.title}
