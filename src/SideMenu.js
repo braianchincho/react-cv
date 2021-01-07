@@ -5,7 +5,7 @@ const menu = [
   { id: "skills", title: "Skills" },
   { id: "experience", title: "Experience" }
 ];
-const SideMenu = () => {
+const SideMenu = ({ clickHref }) => {
   return (
     <div>
       <div className="avatar">
@@ -21,7 +21,11 @@ const SideMenu = () => {
       <ul className="list-none list-menu">
         {menu.map(item => (
           <li className="mb-4" id={`list-menu-item-${item.id}`}>
-            <a href={`#${item.id}`} className="list-menu__a">
+            <a
+              href={`#${item.id}`}
+              className="list-menu__a"
+              onClick={clickHref ? clickHref : () => {}}
+            >
               {item.title}
             </a>
           </li>

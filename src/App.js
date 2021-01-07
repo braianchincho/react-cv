@@ -27,11 +27,12 @@ export default function App() {
             </span>
           </button>
         </div>
-        <SideMenu />
+        <SideMenu clickHref={toggleMenu} />
       </nav>
       <div id="content" className={`${isOpen ? "active" : ""}`}>
         <Principal />
       </div>
+      <div className={`overlay ${isOpen ? "active" : ""}`} />
     </div>
   );
 }
