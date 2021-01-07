@@ -7,7 +7,7 @@ const menu = [
 ];
 const SideMenu = ({ clickHref }) => {
   return (
-    <div>
+    <div className="mt-4 ml-4">
       <div className="avatar">
         <img
           src="https://rickandmortyapi.com/api/character/avatar/4.jpeg"
