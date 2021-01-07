@@ -5,9 +5,9 @@ const menu = [
   { id: "skills", title: "Skills" },
   { id: "experience", title: "Experience" }
 ];
-const SideMenu = () => {
+const SideMenu = ({ clickHref }) => {
   return (
-    <div>
+    <div className="mt-4 ml-4">
       <div className="avatar">
         <img
           src="https://rickandmortyapi.com/api/character/avatar/4.jpeg"
@@ -21,7 +21,14 @@ const SideMenu = () => {
       <ul className="list-none list-menu">
         {menu.map(item => (
           <li className="mb-4" id={`list-menu-item-${item.id}`}>
-            <a href={`#${item.id}`} className="list-menu__a">
+            <a href={`#${item.id}`} className="list-menu__a d-none-mobile">
+              {item.title}
+            </a>
+            <a
+              href={`#${item.id}`}
+              className="list-menu__a d-none-desktop"
+              onClick={clickHref ? clickHref : () => {}}
+            >
               {item.title}
             </a>
           </li>
