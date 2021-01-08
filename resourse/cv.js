@@ -23,7 +23,7 @@ const cv = {
       id: 7,
       institution: "Mcafee - Argentina",
       rol: "Technical intern",
-      startDate: new Date(2018, 1, 15),
+      startDate: new Date(2018, 0, 15),
       endDate: new Date(2018, 11, 15)
     },
     {

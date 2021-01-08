@@ -6,6 +6,6 @@ export const formatDate = date => {
     return null;
   }
   return `${formatNumber(date.getDate())}/${formatNumber(
-    date.getMonth()
+    date.getMonth() + 1
   )}/${date.getFullYear()}`;
 };
