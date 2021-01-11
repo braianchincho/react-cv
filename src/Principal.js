@@ -9,13 +9,9 @@ export default class Principal extends React.Component {
     return (
       <div className="container-cv">
         <AboutMe id="aboutme-component" aboutMe={cv.aboutMe} />
-
-        <EducationList id="eduaction-component" educationList={cv.education} />
-
         <SkillList id="skills-component" skillList={cv.skills} />
-
         <ExperienceList
-          id="experienceL-component"
+          id="experience-component"
           experienceList={cv.experience}
         />
       </div>

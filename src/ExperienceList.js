@@ -10,13 +10,7 @@ const ExperienceList = ({ experienceList }) => {
       <div className="row mt-4">
         {experienceList.map(item => (
           <div className="col-12">
-            <Experience
-              id={item.id}
-              institution={item.institution}
-              rol={item.rol}
-              startDate={item.startDate}
-              endDate={item.endDate}
-            />
+            <Experience experience={item} id={item.id} />
           </div>
         ))}
       </div>

@@ -1,7 +1,8 @@
 const cv = {
   aboutMe: {
+    description: `Hola, mi nombre es Braian Ismael Chincho soy ingeniero en sistemas de información graduado de la universidad tecnológica nacional`,
     birthday: new Date(2020, 2, 23),
-    location: "Argentina, Cordoba",
+    location: "Córdoba, Capital, Argentina",
     mail: "braianchincho@gmail.com"
   },
   experience: [

@@ -1,5 +1,9 @@
 import React from "react";
-const Skill = ({ name, level }) => {
+const Skill = props => {
+  if (!props.skill) {
+    return null;
+  }
+  const { name, level } = props.skill;
   return (
     <div>
       <div className="d-flex justify-content-between ">

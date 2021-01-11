@@ -1,7 +1,6 @@
 import React from "react";
 const menu = [
   { id: "aboutme", title: "About Me" },
-  { id: "education", title: "Education" },
   { id: "skills", title: "Skills" },
   { id: "experience", title: "Experience" }
 ];
