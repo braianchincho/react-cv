@@ -8,7 +8,7 @@
   left: 0;
   height: 100vh;
   z-index: 999;
-  background: #7386d5;
+  background: #4a70af;
   color: #fff;
   transition: all 0.8s;
 }
@@ -23,7 +23,7 @@
   display: block;
 }
 #sidebar ul li a:hover {
-  color: #7386d5;
+  color: #4a70af;
   background: #fff;
 }
 
