@@ -9,8 +9,8 @@ const ExperienceList = ({ experienceList }) => {
       <h4>Experience</h4>
       <div className="row mt-4">
         {experienceList.map(item => (
-          <div className="col-12">
-            <Experience experience={item} id={item.id} />
+          <div className="col-12" key={item.id}>
+            <Experience experience={item} key={item.id} />
           </div>
         ))}
       </div>

@@ -8,10 +8,10 @@ export default class Principal extends React.Component {
   render() {
     return (
       <div className="container-cv">
-        <AboutMe id="aboutme-component" aboutMe={cv.aboutMe} />
-        <SkillList id="skills-component" skillList={cv.skills} />
+        <AboutMe key="aboutme-component" aboutMe={cv.aboutMe} />
+        <SkillList key="skills-component" skillList={cv.skills} />
         <ExperienceList
-          id="experience-component"
+          key="experience-component"
           experienceList={cv.experience}
         />
       </div>
