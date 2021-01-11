@@ -91,6 +91,16 @@ section {
   font-size: 15px;
   font-weight: 300;
 }
+.social-media {
+  list-style: none;
+  display: flex;
+}
+.social-media--item {
+  padding: 0 20px 0 0;
+}
+.social-media--item > a {
+  color: #eee;
+}
 /* END SIDE HEADER MENU */
 @media (max-width: 770px) {
   section {

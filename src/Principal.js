@@ -1,9 +1,10 @@
 import React from "react";
 import AboutMe from "./AboutMe";
-import EducationList from "./EducationList";
 import ExperienceList from "./ExperienceList";
 import SkillList from "./SkillList";
 import cv from "../resourse/cv";
+import "./fontawesome";
+// <i class="fab fa-facebook"></i>
 export default class Principal extends React.Component {
   render() {
     return (
