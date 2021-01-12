@@ -1,12 +1,5 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faGithubAlt,
-  faGoogle,
-  faFacebook,
-  faTwitter,
-  faLinkedin
-} from "@fortawesome/free-brands-svg-icons";
+import SocialMedia from "./SocialMedia";
 const menu = [
   { id: "aboutme", title: "About Me" },
   { id: "skills", title: "Skills" },
@@ -25,21 +18,7 @@ const SideMenu = ({ clickHref }) => {
         <h1>Braian Chincho</h1>
         <span>Ing en sistemas</span>
       </div>
-      <ul className="social-media">
-        <li className="social-media--item">
-          <a
-            href="https://www.linkedin.com/in/braian-ismael-chincho-bb1004144/"
-            target="_blank"
-          >
-            <FontAwesomeIcon icon={faGithubAlt} />
-          </a>
-        </li>
-        <li className="social-media--item">
-          <a href="https://github.com/braianchincho" target="_blank">
-            <FontAwesomeIcon icon={faLinkedin} />
-          </a>
-        </li>
-      </ul>
+      <SocialMedia />
       <ul className="list-none list-menu">
         {menu.map(item => (
           <li className="mb-4" key={`list-menu-item-${item.id}`}>
