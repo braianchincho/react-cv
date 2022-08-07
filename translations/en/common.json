@@ -2,5 +2,7 @@
   "aboutme.title": "About me ll",
   "aboutme.birthday": "Birthday",
   "aboutme.location": "Location",
-  "aboutme.email": "Email"
+  "aboutme.email": "Email",
+  "skill.title": "Skills",
+  "education.title": "Education"
 }

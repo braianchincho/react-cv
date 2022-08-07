@@ -10,13 +10,14 @@ const AboutMe = (props) => {
       <h4>{translate('aboutme.title')}</h4>
       <p className="mt-4">{description}</p>
       <p>
-        <strong>{translate('aboutme.birthday')}</strong> {formatDate(birthday)}
+        <strong>{translate('aboutme.birthday')}: </strong>{' '}
+        {formatDate(birthday)}
       </p>
       <p>
-        <strong>{translate('aboutme.location')}</strong> {location}
+        <strong>{translate('aboutme.location')}: </strong> {location}
       </p>
       <p>
-        <strong>{translate('aboutme.email')}</strong> {mail}
+        <strong>{translate('aboutme.email')}: </strong> {mail}
       </p>
     </section>
   );
