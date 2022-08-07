@@ -1,19 +1,22 @@
-import React from "react";
-import { formatDate } from "../resourse/dateFormater";
-const AboutMe = props => {
+import React from 'react';
+import { formatDate } from '../resourse/dateFormater';
+import { useTranslation } from 'react-i18next';
+
+const AboutMe = (props) => {
+  const translate = useTranslation('common').t;
   const { birthday, location, mail, description } = props.aboutMe;
   return (
     <section id="aboutme" className="mt-4 mb-4">
-      <h4>About me</h4>
+      <h4>{translate('aboutme.title')}</h4>
       <p className="mt-4">{description}</p>
       <p>
-        <strong>Birthday:</strong> {formatDate(birthday)}
+        <strong>{translate('aboutme.birthday')}</strong> {formatDate(birthday)}
       </p>
       <p>
-        <strong>Location:</strong> {location}
+        <strong>{translate('aboutme.location')}</strong> {location}
       </p>
       <p>
-        <strong>Email:</strong> {mail}
+        <strong>{translate('aboutme.email')}</strong> {mail}
       </p>
     </section>
   );

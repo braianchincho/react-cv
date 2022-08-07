@@ -1,10 +1,10 @@
-import React from "react";
-import AboutMe from "./AboutMe";
-import ExperienceList from "./ExperienceList";
-import SkillList from "./SkillList";
-import cv from "../resourse/cv";
-import "./fontawesome";
-// <i class="fab fa-facebook"></i>
+import React from 'react';
+import AboutMe from './AboutMe';
+import ExperienceList from './ExperienceList';
+import SkillList from './SkillList';
+import cv from '../resourse/cv';
+import './fontawesome';
+
 export default class Principal extends React.Component {
   render() {
     return (
