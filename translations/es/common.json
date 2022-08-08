@@ -6,5 +6,7 @@
   "skill.title": "Habilidades",
   "education.title": "Educación",
   "experience.title": "Experiencia",
-  "sidemenu.system.engineer": "Ing en sistemas"
+  "sidemenu.system.engineer": "Ing en sistemas",
+  "language.en": "Inglés",
+  "language.es": "Español"
 }
