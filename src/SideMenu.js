@@ -1,11 +1,14 @@
-import React from "react";
-import SocialMedia from "./SocialMedia";
+import React from 'react';
+import SocialMedia from './SocialMedia';
+import cv from '../resourse/cv';
+import { useTranslation } from 'react-i18next';
 const menu = [
-  { id: "aboutme", title: "About Me" },
-  { id: "skills", title: "Skills" },
-  { id: "experience", title: "Experience" }
+  { id: 'aboutme', title: 'aboutme.title' },
+  { id: 'skills', title: 'skill.title' },
+  { id: 'experience', title: 'experience.title' },
 ];
 const SideMenu = ({ clickHref }) => {
+  const translate = useTranslation('common').t;
   return (
     <div className="mt-4 ml-4">
       <div className="avatar">
@@ -15,22 +18,22 @@ const SideMenu = ({ clickHref }) => {
         />
       </div>
       <div className="name">
-        <h1>Braian Chincho</h1>
-        <span>Ing en sistemas</span>
+        <h1>{`${cv.firstName} ${cv.lastName}`}</h1>
+        <span>{translate(cv.career)}</span>
       </div>
       <SocialMedia />
       <ul className="list-none list-menu">
-        {menu.map(item => (
+        {menu.map((item) => (
           <li className="mb-4" key={`list-menu-item-${item.id}`}>
             <a href={`#${item.id}`} className="list-menu__a d-none-mobile">
-              {item.title}
+              {translate(item.title)}
             </a>
             <a
               href={`#${item.id}`}
               className="list-menu__a d-none-desktop"
               onClick={clickHref ? clickHref : () => {}}
             >
-              {item.title}
+              {translate(item.title)}
             </a>
           </li>
         ))}
