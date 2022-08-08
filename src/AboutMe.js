@@ -8,7 +8,7 @@ const AboutMe = (props) => {
   return (
     <section id="aboutme" className="mt-4 mb-4">
       <h4>{translate('aboutme.title')}</h4>
-      <p className="mt-4">{description}</p>
+      <p className="mt-4">{translate(description)}</p>
       <p>
         <strong>{translate('aboutme.birthday')}: </strong>{' '}
         {formatDate(birthday)}

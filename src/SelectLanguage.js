@@ -6,7 +6,7 @@ const SelectLanguage = () => {
   return (
     <div className="select-language">
       <select
-        class="form-select"
+        className="form-select"
         onChange={(e) => {
           i18n.changeLanguage(e.target.value);
         }}

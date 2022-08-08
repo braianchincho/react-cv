@@ -3,7 +3,7 @@ const cv = {
   lastName: 'Chincho',
   career: 'sidemenu.system.engineer',
   aboutMe: {
-    description: `Hola, mi nombre es Braian Ismael Chincho soy ingeniero en sistemas de información graduado de la universidad tecnológica nacional`,
+    description: 'aboutme.description',
     birthday: new Date(2020, 2, 23),
     location: 'Córdoba, Capital, Argentina',
     mail: 'braianchincho@gmail.com',
