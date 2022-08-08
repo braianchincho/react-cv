@@ -10,7 +10,7 @@ const SelectLanguage = () => {
         onChange={(e) => {
           i18n.changeLanguage(e.target.value);
         }}
-        aria-label="{language.aria.select}"
+        aria-label={t('language.aria.select')}
         id="select-language"
       >
         <option value="en" id="en">

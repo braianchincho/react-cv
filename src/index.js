@@ -11,7 +11,7 @@ const root = createRoot(document.getElementById('root'));
 
 i18next.init({
   interpolation: { escapeValue: false },
-  lng: 'es',
+  lng: 'en',
   resources: {
     en: {
       common: common_en,
