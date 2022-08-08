@@ -4,5 +4,6 @@
   "aboutme.location": "Location",
   "aboutme.email": "Email",
   "skill.title": "Skills",
-  "education.title": "Education"
+  "education.title": "Education",
+  "experience.title": "Experience"
 }
