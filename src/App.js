@@ -5,14 +5,12 @@ import './css/hamburger.css';
 import './css/sidebar.css';
 import Principal from './Principal';
 import SideMenu from './SideMenu';
-import { useTranslation } from 'react-i18next';
 
 export default function App() {
   const [isOpen, setOpen] = React.useState(false);
   const toggleMenu = () => {
     setOpen(!isOpen);
   };
-  const { t, i18n } = useTranslation('common');
 
   return (
     <div className="wrapper">

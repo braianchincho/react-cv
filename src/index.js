@@ -8,6 +8,7 @@ import common_es from '../translations/es/common.json';
 import { createRoot } from 'react-dom/client';
 
 const root = createRoot(document.getElementById('root'));
+document.title = 'curriculum vitae';
 
 i18next.init({
   interpolation: { escapeValue: false },
