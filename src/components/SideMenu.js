@@ -1,6 +1,6 @@
 import React from 'react';
 import SocialMedia from './SocialMedia';
-import cv from '../resourse/cv';
+import cv from '../../resourse/cv';
 import { useTranslation } from 'react-i18next';
 const menu = [
   { id: 'aboutme', title: 'aboutme.title' },

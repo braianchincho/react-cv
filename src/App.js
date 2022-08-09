@@ -7,7 +7,7 @@ import AboutMe from './components/AboutMe';
 import ExperienceList from './components/ExperienceList';
 import SkillList from './components/SkillList';
 import SelectLanguage from './components/SelectLanguage';
-import cv from '../components/resourse/cv';
+import cv from '../resourse/cv';
 import './fontawesome';
 import SideMenu from './components/SideMenu';
 
