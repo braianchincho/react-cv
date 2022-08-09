@@ -11,12 +11,13 @@ const SideMenu = ({ clickHref }) => {
   const translate = useTranslation('common').t;
   return (
     <div className="mt-4 ml-4">
-      <img
-        className="avatar"
-        src="https://media-exp1.licdn.com/dms/image/C4D03AQGhKIUA36JzfA/profile-displayphoto-shrink_800_800/0/1608736176980?e=1665619200&v=beta&t=uW_VqM0sJnk6V9ARk-3w1G9XtkqfpjP_iIYE38cS4HI"
-        alt="avatar"
-      />
-
+      <div className="avatar-container">
+        <img
+          className="avatar"
+          src="https://media-exp1.licdn.com/dms/image/C4D03AQGhKIUA36JzfA/profile-displayphoto-shrink_800_800/0/1608736176980?e=1665619200&v=beta&t=uW_VqM0sJnk6V9ARk-3w1G9XtkqfpjP_iIYE38cS4HI"
+          alt="avatar"
+        />
+      </div>
       <div className="name">
         <h1>{`${cv.firstName} ${cv.lastName}`}</h1>
         <span>{translate(cv.career)}</span>

@@ -53,6 +53,9 @@
 .list-menu__a {
   text-decoration: none;
 }
+.avatar-container {
+  margin-left: 1rem;
+}
 /* ---------------------------------------------------
     MEDIAQUERIES
 ----------------------------------------------------- */
