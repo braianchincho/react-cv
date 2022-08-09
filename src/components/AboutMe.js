@@ -1,5 +1,5 @@
 import React from 'react';
-import { formatDate } from '../resourse/dateFormater';
+import { formatDate } from '../../resourse/dateFormater';
 import { useTranslation } from 'react-i18next';
 
 const AboutMe = (props) => {

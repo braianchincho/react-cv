@@ -1,10 +1,15 @@
-import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/style.css';
 import './css/hamburger.css';
 import './css/sidebar.css';
-import Principal from './Principal';
-import SideMenu from './SideMenu';
+import React from 'react';
+import AboutMe from './components/AboutMe';
+import ExperienceList from './components/ExperienceList';
+import SkillList from './components/SkillList';
+import SelectLanguage from './components/SelectLanguage';
+import cv from '../components/resourse/cv';
+import './fontawesome';
+import SideMenu from './components/SideMenu';
 
 export default function App() {
   const [isOpen, setOpen] = React.useState(false);
@@ -31,7 +36,15 @@ export default function App() {
         <SideMenu clickHref={toggleMenu} />
       </nav>
       <div id="content" className={`${isOpen ? 'active' : ''}`}>
-        <Principal />
+        <div className="container-cv">
+          <SelectLanguage />
+          <AboutMe key="aboutme-component" aboutMe={cv.aboutMe} />
+          <SkillList key="skills-component" skillList={cv.skills} />
+          <ExperienceList
+            key="experience-component"
+            experienceList={cv.experience}
+          />
+        </div>
       </div>
       <div className={`overlay ${isOpen ? 'active' : ''}`} />
     </div>
